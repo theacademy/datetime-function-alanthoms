@@ -50,7 +50,9 @@ public class DateTimeFunctions {
 	 */
 	public static LocalDate getPreviousDatebyWeeks(LocalDate date, int x) {
 		//YOUR CODE STARTS HERE
-		return null;
+		LocalDate today = LocalDate.now();
+		LocalDate previous = today.minusWeeks(x);
+		return previous;
 		//YOUR CODE ENDS HERE
 
 	}
