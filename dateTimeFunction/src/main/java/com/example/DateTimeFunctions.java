@@ -1,6 +1,7 @@
 package com.example;
 
 import java.time.*;
+import java.util.Scanner;
 
 public class DateTimeFunctions {
 
@@ -64,7 +65,10 @@ public class DateTimeFunctions {
 	 */
 	public static String getTimeDifference(LocalDate date1, LocalDate date2) {
 		//YOUR CODE STARTS HERE
-		return null;
+
+		Period diff = Period.between(date1, date2);
+
+		return "Years-" + diff.getYears() + ":Months-" + diff.getMonths() + ":Days-" + diff.getDays();
 		//YOUR CODE ENDS HERE
 
 	}
